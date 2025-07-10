@@ -6,48 +6,52 @@ This project is a robust Playwright-based automation framework for end-to-end (E
 
 ## 📂 Project Structure
 
-PlaywrightAutomation/
-├── .github/                        # GitHub-specific workflows and configurations
-├── allure-report/                 # Generated Allure reports (after test execution)
-├── allure-results/                # Raw results for Allure reporting
-├── pageObjects/                   # Page Object Models (POM) for web elements
-│   ├── CartPage.js
-│   ├── CheckOutDetailsPage.js
-│   ├── DashboardPage.js
-│   ├── LoginPage.js
-│   ├── MyOrdersPage.js
-│   ├── OrderDetailsPage.js
-│   └── POManager.js
-├── tests-examples/                # Experimental or reference test cases
-├── tests/                         # Main test scripts
-│   ├── Calendar.spec.js
-│   ├── ClientApp.spec.js
-│   ├── ClientAppOther.spec.js
-│   ├── ClientAppPageObjectImplementation.spec.js
-│   ├── MoreValidations.spec.js
-│   ├── MoreValidations.spec.js-snapshots/
-│   ├── NetworkTest.spec.js
-│   ├── NetworkTest2.spec.js
-│   ├── UIBasicstest.spec.js
-│   ├── WebApiPart1.spec.js
-│   ├── WebApiPart2.spec.js
-│   ├── excelDemo.spec.js
-│   └── specialLocators.spec.js
-├── utils/                         # Utility functions and test data
-│   ├── APIUtils.js
-│   ├── placeOrderTestData.json
-│   └── test-base.js
-├── .gitignore                     # Git ignore rules
-├── package-lock.json              # NPM dependency lock file
-├── package.json                   # Project metadata and scripts
-├── playwright.config.js           # Main Playwright config
-├── playwright.config1.js          # Possibly an alternate config
-├── screenshot.png                 # Saved screenshot (for visual testing or debug)
-├── screenshotelement.png          # Screenshot of a specific element
-└── state.json                     # Auth/session state for reuse
-
-
-
+```
+/PlaywrightAutomation
+├── .github/                         # GitHub-specific workflows and configurations
+├── allure-report/                  # Allure reports generated after test execution
+├── allure-results/                 # Raw results for Allure reporting
+│
+├── pageObjects/                    # Page Object Model (POM) classes
+│   ├── CartPage.js                 # Cart page interactions
+│   ├── CheckOutDetailsPage.js     # Checkout details page
+│   ├── DashboardPage.js           # Dashboard actions
+│   ├── LoginPage.js               # Login flow page
+│   ├── MyOrdersPage.js            # My orders view and validations
+│   ├── OrderDetailsPage.js        # Order summary and status
+│   └── POManager.js               # Page Object Manager to centralize POM handling
+│
+├── tests-examples/                 # Sample/reference test cases
+│
+├── tests/                          # Main Playwright test scripts
+│   ├── Calendar.spec.js            # Calendar date picker validation
+│   ├── ClientApp.spec.js           # Client-side UI flow
+│   ├── ClientAppOther.spec.js      # Alternate UI test
+│   ├── ClientAppPageObjectImplementation.spec.js  # POM-based test
+│   ├── MoreValidations.spec.js     # Additional assertions
+│   ├── MoreValidations.spec.js-snapshots/ # Snapshot artifacts
+│   ├── NetworkTest.spec.js         # API request/response interception
+│   ├── NetworkTest2.spec.js        # API mocking
+│   ├── UIBasicstest.spec.js        # Basic UI elements test
+│   ├── WebApiPart1.spec.js         # REST API test part 1
+│   ├── WebApiPart2.spec.js         # REST API test part 2
+│   ├── excelDemo.spec.js           # Data-driven tests using Excel
+│   └── specialLocators.spec.js     # Testing advanced selectors
+│
+├── utils/                          # Utility functions and test data
+│   ├── APIUtils.js                 # Helper for API calls (setup/teardown)
+│   ├── placeOrderTestData.json     # Test data file (order details)
+│   └── test-base.js                # Base setup and fixture logic
+│
+├── .gitignore                      # Files/folders to ignore in Git
+├── package-lock.json               # Auto-generated dependency lock
+├── package.json                    # NPM configuration & test scripts
+├── playwright.config.js            # Main Playwright configuration
+├── playwright.config1.js           # Alternate/experimental config
+├── screenshot.png                  # Full-page screenshot (test artifact)
+├── screenshotelement.png           # Specific element screenshot
+└── state.json                      # Auth/session state for logged-in reuse
+```
 
 ---
 

@@ -1,6 +1,6 @@
 # 🎭 Playwright Automation Framework
 
-This project is a robust Playwright-based automation framework for end-to-end (E2E) testing of web and API layers. It follows modern best practices such as the Page Object Model, externalized test data, parallel execution, CI/CD integration, and advanced reporting.
+This project is a robust Playwright-based automation framework for end-to-end (E2E) testing of web and API layers using javascript. It follows modern best practices such as the Page Object Model, externalized test data, parallel execution, CI/CD integration, and advanced reporting.
 
 ---
 

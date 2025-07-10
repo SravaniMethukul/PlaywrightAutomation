@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11278","@web Client App with POM ZARA COAT 3","","Thu Jul 10 11:53:25 CEST 2025","passed","Thu Jul 10 11:53:36 CEST 2025","","ClientAppPageObjectImplementation.spec.js","",""
+"","11468","@web Client App with POM ADIDAS ORIGINAL","","Thu Jul 10 11:53:37 CEST 2025","passed","Thu Jul 10 11:53:49 CEST 2025","","ClientAppPageObjectImplementation.spec.js","",""
+"","2952","@web Calendar Handling","","Thu Jul 10 11:53:25 CEST 2025","passed","Thu Jul 10 11:53:28 CEST 2025","","Calendar.spec.js","",""

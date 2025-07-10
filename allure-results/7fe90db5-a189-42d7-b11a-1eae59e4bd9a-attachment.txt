@@ -1,0 +1,5 @@
+data to be selected: ${month}/${date}/${year}
+//abbr[text()='26']
+value is : 2027-06-26
+formatted date is : 2027-06-26
+Completed the test

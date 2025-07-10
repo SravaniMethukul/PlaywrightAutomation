@@ -8,10 +8,8 @@ This project is a robust Playwright-based automation framework for end-to-end (E
 
 PlaywrightAutomation/
 ├── .github/                        # GitHub-specific workflows and configurations
-│
 ├── allure-report/                 # Generated Allure reports (after test execution)
 ├── allure-results/                # Raw results for Allure reporting
-│
 ├── pageObjects/                   # Page Object Models (POM) for web elements
 │   ├── CartPage.js
 │   ├── CheckOutDetailsPage.js
@@ -20,16 +18,14 @@ PlaywrightAutomation/
 │   ├── MyOrdersPage.js
 │   ├── OrderDetailsPage.js
 │   └── POManager.js
-│
 ├── tests-examples/                # Experimental or reference test cases
-│
 ├── tests/                         # Main test scripts
 │   ├── Calendar.spec.js
 │   ├── ClientApp.spec.js
 │   ├── ClientAppOther.spec.js
 │   ├── ClientAppPageObjectImplementation.spec.js
 │   ├── MoreValidations.spec.js
-│   ├── MoreValidations.spec.js-snapshots/   # Snapshot testing artifacts
+│   ├── MoreValidations.spec.js-snapshots/
 │   ├── NetworkTest.spec.js
 │   ├── NetworkTest2.spec.js
 │   ├── UIBasicstest.spec.js
@@ -37,20 +33,19 @@ PlaywrightAutomation/
 │   ├── WebApiPart2.spec.js
 │   ├── excelDemo.spec.js
 │   └── specialLocators.spec.js
-│
 ├── utils/                         # Utility functions and test data
-│   ├── APIUtils.js                # API helper class for test data setup/cleanup
-│   ├── placeOrderTestData.json    # Test data file
-│   └── test-base.js               # Base setup or custom fixtures
-│
-├── .gitignore                     # Specifies files to ignore in Git
-├── package-lock.json              # Auto-generated dependency lock file
-├── package.json                   # NPM config and test scripts
-├── playwright.config.js           # Primary Playwright configuration
-├── playwright.config1.js          # Alternate/experimental Playwright config
-├── screenshot.png                 # Full-page screenshot (test artifact)
-├── screenshotelement.png          # Element-level screenshot
-└── state.json                     # Auth/session state storage
+│   ├── APIUtils.js
+│   ├── placeOrderTestData.json
+│   └── test-base.js
+├── .gitignore                     # Git ignore rules
+├── package-lock.json              # NPM dependency lock file
+├── package.json                   # Project metadata and scripts
+├── playwright.config.js           # Main Playwright config
+├── playwright.config1.js          # Possibly an alternate config
+├── screenshot.png                 # Saved screenshot (for visual testing or debug)
+├── screenshotelement.png          # Screenshot of a specific element
+└── state.json                     # Auth/session state for reuse
+
 
 
 

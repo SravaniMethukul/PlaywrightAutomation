@@ -88,3 +88,9 @@ Use `test.skip()`, `test.only()`, `test.describe.serial()` for controlled test e
 Run tests with filters, retries, tags, project-specific config:
 ```bash
 npx playwright test --project=chromium --grep="@login"
+```
+
+### 11. In Jenkins to run the tests from script use
+```
+npm run regression
+```

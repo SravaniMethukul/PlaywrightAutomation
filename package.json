@@ -4,9 +4,10 @@
   "main": "index.js",
   "scripts": {
     "regression": "npx playwright test",
-    "webTests" : "npx playwright test --grep @web",
-    "APITests" : "npx playwright test --grep @api",
-    "SafariNewConfig" :"npx playwright test --config playwright.config1.js --project=\"Safari\""
+    "webTests": "npx playwright test --grep @web",
+    "APITests": "npx playwright test --grep @api",
+    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=\"Safari\"",
+    "CucumberRegression": "npx cucumber-js features --tags \"@Regression\" --retry 1 --exit"
   },
   "keywords": [],
   "author": "",
@@ -14,12 +15,14 @@
   "type": "commonjs",
   "description": "",
   "devDependencies": {
+    "@azure/microsoft-playwright-testing": "^1.0.0-beta.7",
     "@playwright/test": "^1.53.2",
     "@types/node": "^24.0.3",
     "allure-commandline": "^2.34.1",
     "allure-playwright": "^3.3.0"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^11.3.0",
     "exceljs": "^4.4.0"
   }
 }

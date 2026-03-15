@@ -57,3 +57,9 @@ jobs:
         with:
           name: allure-report
           path: allure-report/
+      - name: Upload Test Videos
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: test-videos
+          path: test-results/

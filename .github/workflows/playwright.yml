@@ -1,4 +1,5 @@
 name: Playwright Tests
+
 on:
   push:
     branches: [main, master]
@@ -8,25 +9,28 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Tags to execute"
+        description: 'Tags to execute'
         required: false
-        default: ""
+        default: ''
         type: choice
         options:
-          - "@smoke"
-          - "@regression"
-          - "@e2e"
-          - "@performance"
-          - "@web"
-          - "@api"
+          - '@smoke'
+          - '@regression'
+          - '@e2e'
+          - '@performance'
+          - '@web'
+          - '@api'
 
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Opt into Node.js 24
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: lts/*
       - name: Install dependencies
@@ -40,9 +44,9 @@ jobs:
           else
             npx playwright test
           fi
-      - uses: actions/upload-artifact@v4
-        if: ${{ !cancelled() }}
+      - name: Upload HTML Report
+        if: always()
+        uses: actions/upload-artifact@v5
         with:
-          name: playwright-report
+          name: playwright-html-report
           path: playwright-report/
-          retention-days: 30

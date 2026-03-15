@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('E2E Automation Test Other', async ({ browser }) => {
+test('@e2e E2E Automation Test Other', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     const products = page.locator(".card-body");

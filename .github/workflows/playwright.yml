@@ -6,7 +6,7 @@ on:
       tag:
         description: "Tags to execute"
         required: false
-        default: ""
+        default: "@e2e"
         type: choice
         options:
           - "@smoke"

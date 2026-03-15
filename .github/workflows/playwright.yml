@@ -45,7 +45,7 @@ jobs:
           fi
       - name: Upload HTML Report
         if: always()
-        uses: actions/upload-artifact@v5 # Updated to the latest secure version
+        uses: actions/upload-artifact@v7 # Updated to the latest secure version
         with:
           name: playwright-html-report
           path: playwright-report/

@@ -21,6 +21,7 @@ const config = ({
     headless: true,
     screenshot: 'on', //screenshot for everystep (only-on-failure, on, off)
     trace: 'on', // log information for each step(on, off, retain-on-failure)
+    video: 'on'
   },
 
 

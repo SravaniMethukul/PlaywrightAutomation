@@ -39,9 +39,9 @@ jobs:
       - name: Run Playwright tests
         run: |
           if [ "${{ github.event.inputs.tag }}" != "" ]; then
-            npx playwright test --grep "${{ github.event.inputs.tag }}"
+            npx playwright test --grep "${{ github.event.inputs.tag }}" --headless
           else
-            npx playwright test
+            npx playwright test --headless
           fi
       - name: Upload HTML Report
         if: always()
